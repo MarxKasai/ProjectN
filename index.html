@@ -3,36 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regalo</title>
+    <title>❤</title>
+    <link rel="icon" type="image/png" href="img/CinnamorollIcon.png">
+    <link rel="stylesheet" href="css/hideAnimation.css" type="text/css">
+
     <style>
         body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background: url(img/StarryNight.gif) no-repeat center center fixed;
-            /* Puedes ajustar la propiedad 'background-size' según tus necesidades */
-            background-size: cover; /* Otra opción: cover, contain, etc. */
+            background: #ccedff;
+            color: red;
+            font-family: 'Helvetica';
         }
 
-        /* Puedes añadir estilos adicionales según tu diseño */
-        /* Por ejemplo, para centrar el contenido en el medio de la página */
-        .contenido {
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        
+
+        h1 {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font-size: 2em; /* Tamaño de la fuente */
+            font-family: 'DS-Digital'; /* Fuente estilo reloj digital */
+            color: white;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
-    <div class="contenido">
-        <img src="img/FlyingGift.gif" alt="Imagen centrada">
+    <div class="container">
+        <img src="img/Heart.png" alt="Imagen de corazón">
+        <h1 id="currentDate"></h1>
+        <h2 data-splitting class="headline headline--jump">Felicidades</h2>
+        <div class="headline headline--jump">
+            <span class="word">
+                <span class="char" data-char-index="1">H</span>
+                <span class="char" data-char-index="2">e</span>
+                <span class="char" data-char-index="3">l</span>
+                <span class="char" data-char-index="4">l</span>
+                <span class="char" data-char-index="5">o</span>
+            </span>
+          </div>
     </div>
 
-    <audio autoplay loop controls style="display: none">
-        <source src="bgm/MusicBox.mp3" type="audio/mp4">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
+    <script>
+        // Obtener la fecha actual
+        let currentDate = new Date();
+        
+        // Formatear la fecha como "DD-MM-YYYY"
+        let formattedDate = currentDate.getDate() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getFullYear();
+        
+        // Insertar la fecha en el elemento con id "currentDate"
+        document.getElementById('currentDate').innerText = formattedDate;
+
+        Splitting();
+    </script>
 </body>
 </html>
-
