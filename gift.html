@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regalo</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/stylesGift.css" type="text/css">
     <link rel="icon" type="image/png" href="img/CinnamorollIcon.png">
 
     <style>
@@ -46,28 +46,12 @@
         <a href="index.html"><img src="img/FlyingGift.gif" alt="Regalo volador"></a>
     </div>
 
-    <script>
-        function reproducirAudio() {
-            var audio = document.getElementById("audio");
-            audio.play();
-        }
-
-        function solicitarPermiso() {
-            if (confirm("¿Quieres reproducir el audio?")) {
-                reproducirAudio();
-            }
-        }
-
-        // Muestra la solicitud de permiso al cargar la página
-        window.onload = function() {
-            solicitarPermiso();
-        };
-    </script>
-
     <audio id="audio" loop controls style="display: none">
         <source src="bgm/MusicBox.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
+
+    <script src="js/gift.js"></script>
 </body>
 </html>
 

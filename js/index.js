@@ -1,14 +1,10 @@
-// Obtener la fecha actual
+// Obtener fecha actual
 let currentDate = new Date();
-
-// Formatear la fecha como "DD-MM-YYYY"
 let formattedDate = currentDate.getDate() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getFullYear();
-
-// Insertar la fecha en el elemento con id "currentDate"
 document.getElementById('currentDate').innerText = formattedDate;
 
 
-
+// Efecto petalos
 class Petal {
     constructor(config) {
         this.el = document.createElement('div');
