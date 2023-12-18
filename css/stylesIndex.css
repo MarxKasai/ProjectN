@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ccedff;
+    color: white;
+    font-family: 'Lexend Deca';
+    font-size: 3em;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1em; /* Tamaño de la fuente */
+    font-family: 'DS-Digital'; /* Fuente estilo reloj digital */
+    color: white;
+}
+
+h2 {
+    color: red;
+    font-size: 2em
+}
+
+.date-container {
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    height: auto;
+    animation: palpitar 1s infinite alternate; /* Pulsating animation */
+}
+
+@keyframes palpitar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

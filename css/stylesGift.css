@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/StarryNight.gif) no-repeat center center fixed #ccedff;
+    /* Puedes ajustar la propiedad 'background-size' según tus necesidades */
+    background-size: cover; /* Otra opción: cover, contain, etc. */
+}
+
+/* Puedes añadir estilos adicionales según tu diseño */
+/* Por ejemplo, para centrar el contenido en el medio de la página */
+.contenido {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: descender 8s ease-in-out forwards; /* Animación de entrada */
+}
+
+.contenido img {
+    width: 90%;
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    
+}
+
+@keyframes descender {
+    to {
+        top: 50%; /* Se mueve hacia el centro */
+    }
+}
