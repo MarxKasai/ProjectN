@@ -71,3 +71,41 @@ transform: translate(-50%, -50%);
         transform: scale(1.1);
     }
 }
+
+#audioButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer .signature {
+    margin-left: 10px;
+}
+
+.footer .letter-container {
+    margin-right: 10px;
+}
+
+.footer img {
+    width: 30px;
+    height: auto;
+}

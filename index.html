@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>❤</title>
+  <title>Para ti</title>
   <link rel="icon" type="image/png" href="img/CinnamorollIcon.png">
   <link rel="stylesheet" href="css/stylesIndex.css" type="text/css">
   <link rel="stylesheet" href="css/blossomsEffect.css" type="text/css">
   <link rel="stylesheet" href="css/jumpyMonth.css" type="text/css">
-
 </head>
 
 <body>
 
-  <div id="blossom_container"></div>
+  <section id="blossom_container"></section>
   
   <section class="heart-container">
     <img src="img/Heart.png"  class="heart" alt="Corazón palpitando">
@@ -30,11 +29,27 @@
   <section class="cats-container">
     <img src="img/CatCouple.gif"  class="cats" alt="Pareja de gatos">
   </section>
-    
-  
+
+  <audio id="audio" loop style="display:none">
+    <source src="bgm/HerSong.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <button id="audioButton" onclick="toggleAudio()">▶️</button>
 
   <script src="js/index.js"></script>
 
 </body>
+
+<!--
+<footer>
+  <section class="signature">
+    vX.X  Made with ❤ by Marcos
+  </section>
+  <section class="letter-container">
+    <img src="img/Letter.png"  class="letter" alt="Carta">
+  </section>
+</footer>
+-->
 
 </html>
