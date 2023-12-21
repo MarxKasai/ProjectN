@@ -41,3 +41,9 @@ body {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .contenido img {
+        width: 100%;
+    }
+}

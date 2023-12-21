@@ -109,3 +109,21 @@ footer {
     width: 30px;
     height: auto;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .cats {
+        width: 80%;
+    }
+}
