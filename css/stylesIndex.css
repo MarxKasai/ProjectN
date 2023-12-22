@@ -55,7 +55,7 @@ h2 {
 }
 
 .cats {
-    width: 50%;
+    width: 60%;
     display: block;
     position: relative;
     height: auto;
@@ -88,35 +88,25 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     box-sizing: border-box;
+    font-size: 0.5em;
 }
 
 .footer .signature {
     margin-left: 10px;
 }
 
-.footer .letter-container {
+.footer .version {
     margin-right: 10px;
-}
-
-.footer img {
-    width: 30px;
-    height: auto;
 }
 
 @media screen and (max-width: 600px) {
     body {
         font-size: 2em;
-    }
-
-    h1 {
-        font-size: 0.8em;
     }
 
     h2 {

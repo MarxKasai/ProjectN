@@ -46,4 +46,7 @@ body {
     .contenido img {
         width: 100%;
     }
+    .contenido {
+        background-size: cover;
+    }
 }
