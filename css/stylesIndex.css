@@ -114,7 +114,7 @@ footer {
     }
 
     h1 {
-        font-size: 0.8em;
+        font-size: 0.5em;
     }
 
     .cats-container {
@@ -124,9 +124,7 @@ footer {
     footer {
         font-size: 0.3em;
     }
-}
 
-@media screen and (max-width: 350px) {
     .cats {
         width: 80%;
     }
