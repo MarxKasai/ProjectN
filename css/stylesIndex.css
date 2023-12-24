@@ -21,7 +21,7 @@ h1 {
 }
 
 main {
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .heart-container {
@@ -109,17 +109,21 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+    main {
+        margin-top: 50px;
+    }
+
     .cats-container {
         margin-bottom: 20px;
     }
 
-    .cats {
-        width: 80%;
+    footer {
+        font-size: 0.3em;
     }
 }
 
-@media screen and (max-width: 300px) {
-    .cats-container {
-        margin-bottom: 40px;
+@media screen and (max-width: 350px) {
+    .cats {
+        width: 80%;
     }
 }
