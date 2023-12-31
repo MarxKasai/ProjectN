@@ -24,6 +24,10 @@ let currentDate = new Date();
 let formattedDate = currentDate.getDate() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getFullYear();
 document.getElementById('currentDate').innerText = formattedDate;
 
+//Obtener hora actual
+currentDate = new Date();
+let formattedTime = currentDate.toLocaleTimeString('en-US', { timeStyle: 'short' });
+document.getElementById('currentTime').innerText = formattedTime;
 
 // Efecto petalos
 class Petal {
