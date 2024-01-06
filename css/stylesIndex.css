@@ -35,7 +35,7 @@ main {
     display: block;
     position: relative;
     height: auto;
-    animation: palpitar 1s infinite alternate;
+    animation: palpitar 0.9s infinite alternate;
 }
 
 .date-container {
@@ -70,7 +70,7 @@ main {
     text-align: center;
     position: fixed;
     bottom: 0;
-    right: 0;
+    right: -100px;
     margin-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@ main {
 }
 
 .speech-wrapper{
-    padding: 30px 40px;
+    padding: 30px;
     .bubble{
       width: 240px;
       height: auto;

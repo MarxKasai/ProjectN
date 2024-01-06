@@ -25,12 +25,12 @@ let textChoices = [
     "Legendary!",
     "Quadra Kill!!",
     "P E N T A  K I L L",
-    "¡Ostia! Puedo escuchar a mi Creador... 'Eimikochu'... ¡Qué enigmáticas y sabias palabras, oh, Creador!",
-    "¡Jope! Puedo escuchar a mi Creador... 'Qué sueño'... ¡Qué sabias y enigmáticas palabras, oh, Creador!",
+    "¡Jope! Puedo escuchar a mi Creador... 'Eimikochu'... ¡Qué enigmáticas y sabias palabras, oh, Creador!",
+    "¡Ostia! Puedo escuchar a mi Creador... 'Qué sueño'... ¡Qué sabias y enigmáticas palabras, oh, Creador!",
     "¡Ejem! Esta frase fue escrita el 6-1-2024, como la mayoría de ellas... ?!?!!! Pensé que tendría que decir algo más, qué fácil >:)",
     "Reinicia (↻) la página para ver un nuevo mensaje aleatorio. Ah, ya lo sabías. Es lo que tiene lo de aleatorio... :(",
     "La noche estrellada lo oculta, pero el fondo base donde estaba el regalo volador es del color #aec6cf (azul pastel)",
-    "¿Soy un pingüino realmente? ¿Es demostrable mi existencia? Tal vez no elija mis propias palabras. Tal vez solo sean la línea 33 de js/dialogue.js anexionado a index.html...",
+    "¿Soy un pingüino realmente? ¿Es demostrable mi existencia? Tal vez no elija mis propias palabras. Tal vez solo sean la línea 33 del archivo dialogue.js anexionado a index.html...",
 
     "⠀⠀⠀⠀⣀⡤⣤⠶⠛⠉⠉⠀⠀⠉⠉⠛⠲⣤⣤⣄⠀⠀⠀⠀⠀\n" +
     "⠀⠀⠀⡼⠃⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠈⢧⠀⠀⠀⠀\n" +
@@ -47,8 +47,8 @@ let textChoices = [
 // Function to generate random text and update the HTML element
 function generateRandomText() {
     // Get a random index from the textChoices array
-    var randomIndex = Math.floor(Math.random() * textChoices.length);
-    var randomText = textChoices[randomIndex];
+    let randomIndex = Math.floor(Math.random() * textChoices.length);
+    let randomText = textChoices[randomIndex];
 
     document.getElementById("randomText").innerText = randomText;
 }
