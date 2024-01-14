@@ -1,5 +1,5 @@
 window.onload = function() {
-    alert('¡Algo está cayendo!\n\nConsejo: pulsa el botón de play cada vez que accedas a una página');
+    alert('¡Hola de nuevo, Noa!\n\nNuevo consejo: algo cambiará cada vez que visites la página principal');
 };
 
 let audio = document.getElementById('audio');

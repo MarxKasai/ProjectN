@@ -10,7 +10,7 @@ body {
     top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: descender 30s ease-in-out forwards;
+    animation: descender 25s ease-in-out forwards;
 }
 
 .gift img {
@@ -25,6 +25,18 @@ body {
     to {
         top: 50%;
     }
+}
+
+.ufo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 80px;
+}
+
+.ufo img {
+    width: 15%;
+    height: auto;
 }
 
 #audioButton {
@@ -42,5 +54,9 @@ body {
 @media screen and (max-width: 600px) {
     .contenido img {
         width: 100%;
+    }
+
+    .ufo img {
+        width: 35%;
     }
 }
