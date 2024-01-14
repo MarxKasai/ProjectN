@@ -22,6 +22,7 @@ h1 {
 
 main {
     margin-top: 35px;
+    z-index: 5;
 }
 
 .heart-container {
@@ -93,6 +94,7 @@ main {
       box-shadow: 2px 8px 5px #000;
       position: relative;
       margin: 0 0 25px;
+      right: -100px;
       &.alt{
         margin: 0 0 0 60px;
       }
@@ -169,6 +171,51 @@ footer {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 950px) {
+    .speech-wrapper .bubble {
+        right: -140px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cats-container {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cats {
+        left: -50px;
+    }
+
+    .penguin-container {
+        right: -150px;
+    }
+
+    .speech-wrapper .bubble {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cats {
+        width: 55%;
+        left: -70px;
+    }
+
+    .penguin-container {
+        right: -170px;
+    }
+
+    .penguin {
+        width: 30%;
+    }
+
+    .speech-wrapper .bubble {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     main {
         margin-top: 50px;
@@ -182,12 +229,25 @@ footer {
         margin-bottom: 20px;
     }
 
-    .cats {
-        width: 80%;
+    .penguin-container {
+        margin-bottom: 20px;
     }
 
     footer {
         font-size: 0.3em;
     }
+}
 
+@media screen and (max-width: 450px) {
+    .penguin {
+        width: 25%;
+    }
+
+    .penguin-container {
+        right: -200px;
+    }
+
+    .speech-wrapper .bubble {
+        width: 170px;
+    }
 }

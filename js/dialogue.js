@@ -3,7 +3,7 @@ let textChoices = [
     "¡Hola! Soy un pingüino, mi nombre es Noma :D",
     "25-11-2023 <3",
     "Marcos no me paga por estar aquí...",
-    "011010010110101010100101",
+    "011010101110101",
     "ⓘ Este mensaje ha sido eliminado.",
     "if (u) {♡;}",
     "爱",
@@ -12,7 +12,7 @@ let textChoices = [
     "Error 404",
     "Abre la puerta al paraíso~♪ Y mira que hay tras el sol tras el... ¡¿Estabas ahí?!",
     "I'm a Brooklyn baby~♪ Tatarataratara~♪ Tatararararara~♪",
-    "Chukuchukuchukuchuku~",
+    "Chkuchkuchku~",
     "Holaaaaa :DD",
     "isdhcbhid",
     "djiicnjiwedi",
@@ -44,9 +44,7 @@ let textChoices = [
     "¡Enhorabuena! ¡Este es el último mensaje de la lista! La prob. de aparición era del 2.86%"
 ];
 
-// Function to generate random text and update the HTML element
 function generateRandomText() {
-    // Get a random index from the textChoices array
     let randomIndex = Math.floor(Math.random() * textChoices.length);
     let randomText = textChoices[randomIndex];
 

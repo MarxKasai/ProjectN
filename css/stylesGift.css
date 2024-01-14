@@ -5,7 +5,7 @@ body {
     background-size: cover;
 }
 
-.contenido {
+.gift {
     position: absolute;
     top: -100%;
     left: 50%;
@@ -13,7 +13,7 @@ body {
     animation: descender 30s ease-in-out forwards;
 }
 
-.contenido img {
+.gift img {
     width: 80%;
     height: auto;
     display: block;
