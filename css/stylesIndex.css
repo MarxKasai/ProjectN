@@ -50,7 +50,7 @@ main {
     position: relative;
     text-align: center;
     font-family: 'Lexend Deca', serif;
-    color: #00000033;
+    color: #00000020;
 }
 
 .cats-container {
@@ -86,6 +86,7 @@ main {
 
 .speech-wrapper{
     padding: 30px;
+    z-index: 6;
     .bubble{
       width: 240px;
       height: auto;
@@ -96,6 +97,7 @@ main {
       position: relative;
       margin: 0 0 25px;
       right: -100px;
+      bottom: -45px;
       &.alt{
         margin: 0 0 0 60px;
       }
