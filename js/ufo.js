@@ -13,12 +13,12 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/TenkiNoKo.mp4',
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/HowlFood.mp4',
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/ChihiroTrain.mp4',
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/Wotakoi.mp4',
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/CinnamoCrazy.mp4',
-    'C:/Users/Marcos/Desktop/N/ProjectN/mp4/McSuzume.mp4',
+    'mp4/TenkiNoKo.mp4',
+    'mp4/HowlFood.mp4',
+    'mp4/ChihiroTrain.mp4',
+    'mp4/Wotakoi.mp4',
+    'mp4/CinnamoCrazy.mp4',
+    'mp4/McSuzume.mp4',
     '',
 ];
 
