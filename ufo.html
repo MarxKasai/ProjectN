@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti</title>
+  <link rel="icon" type="image/png" href="img/CinnamorollIcon.png">
+  <link rel="stylesheet" href="css/stylesUfo.css" type="text/css">
+</head>
+
+<body>
+<div class="lighting"></div>
+  
+<div class="container">
+  <div class="lighting-floor"></div>
+  
+  <div class="floor">
+    <div><div></div></div>
+    <div></div>
+    <div><div></div></div>
+    <div></div>
+    <div><div></div></div>
+    <div></div>
+  </div>
+
+  <div class="media-center"><div></div><div></div><div></div><div></div></div>
+
+  <div class="dvr">
+    <input type="range" id="opacity" name="volume" value="1" min="0" max="1" step="0.01"/>
+    <div class="front">
+      <div class="display"></div>
+    </div>
+  </div>
+
+  <div class="lightbars">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <div class="sound-system">
+    <div class="sys-l">
+      <div></div>
+      <div></div>
+      <div></div>
+      <span></span>
+      <button id="audioButton" onclick="toggleAudio()"></button>
+    </div>
+    <div class="sys-r">
+      <div></div>
+      <div></div>
+      <div></div>
+      <span></span>
+      <button id="audioButton" onclick="toggleAudio()"></button>
+    </div>
+  </div>
+
+  <div id="media-container">
+    <video src=""></video>
+  </div>
+</div>
+
+<audio id="audio" loop>
+    <source src="bgm/VisitingHome.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script src="js/ufo.js"></script>
+
+</body>
+
+</html>

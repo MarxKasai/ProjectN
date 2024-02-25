@@ -10,7 +10,7 @@ body {
     top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: descender 25s ease-in-out forwards;
+    animation: descender 15s ease-in-out forwards;
 }
 
 .gift img {
