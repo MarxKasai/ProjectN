@@ -13,6 +13,9 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
+    'mp4/Finn_and_PB_kiss_.mp4',
+    'mp4/videoplayback.mp4',
+    'mp4/mp4/Kung_Fu_Panda_3_-_Po__Kai_final_fight_1.mp4',
     'mp4/TenkiNoKo.mp4',
     'mp4/HowlFood.mp4',
     'mp4/ChihiroTrain.mp4',
