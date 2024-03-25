@@ -69,7 +69,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener('click', (e)=>{
     e.preventDefault();
-    (currentIndex == 7) ? currentIndex++ : '';
+    (currentIndex == 10) ? currentIndex++ : '';
     swapMedia();
 });
 
