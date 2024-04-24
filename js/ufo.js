@@ -13,9 +13,15 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
-    'mp4/Finn_and_PB_kiss_.mp4',
-    'mp4/videoplayback.mp4',
-    'mp4/mp4/Kung_Fu_Panda_3_-_Po__Kai_final_fight_1.mp4',
+    'mp4/Umi.mp4',
+    'mp4/Deoxys.mp4',
+    'mp4/OnlyYesterday.mp4',
+    'mp4/Portal2.mp4',
+    'mp4/Mario.mp4',
+    'mp4/Kirby.mp4',
+    'mp4/Po.mp4',
+    'mp4/SerenaAsh.mp4',
+    'mp4/FinnPB.mp4',
     'mp4/TenkiNoKo.mp4',
     'mp4/HowlFood.mp4',
     'mp4/ChihiroTrain.mp4',
@@ -69,7 +75,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener('click', (e)=>{
     e.preventDefault();
-    (currentIndex == 10) ? currentIndex++ : '';
+    (currentIndex == 16) ? currentIndex++ : '';
     swapMedia();
 });
 
