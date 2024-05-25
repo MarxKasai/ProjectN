@@ -1,5 +1,5 @@
 .jumpyMonth {
-  animation: jump 1000ms cubic-bezier(0.165, 0.44, 0.64, 1) infinite normal;
+  animation: jump 1000ms cubic-bezier(0.165, 0.44, 0.64, 1) infinite normal,shine 3s infinite linear;
   display: inline-block;
   position: relative;
   transform-origin: 50% 100%;
@@ -16,4 +16,9 @@
   50% { transform: translateY(10%) scaleY(0.8); }
   70% { transform: translateY(-5%) scaleY(1); }
   80%, 100% { transform: translateY(0) scaleY(1); }
+}
+
+@keyframes shine {
+  0% { text-shadow: 0 0 2px rgba(224, 224, 224, 0.8), 0 0 4px rgba(224, 224, 224, 0.8), 0 0 6px rgba(224, 224, 224, 0.8), 0 0 8px rgba(224, 224, 224, 0.8), 0 0 10px rgba(224, 224, 224, 0.8), 0 0 12px rgba(224, 224, 224, 0.8), 0 0 14px rgba(224, 224, 224, 0.8); }
+  100% { text-shadow: 0 0 2px rgba(224, 224, 224, 0.5), 0 0 4px rgba(224, 224, 224, 0.5), 0 0 6px rgba(224, 224, 224, 0.5), 0 0 8px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.5), 0 0 14px rgba(255, 255, 255, 0.5); }
 }
