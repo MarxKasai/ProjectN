@@ -13,6 +13,8 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
+    'mp4/SpyFamily.mp4',
+    'mp4/KimiNiTodoke.mp4',
     'mp4/Umi.mp4',
     'mp4/Deoxys.mp4',
     'mp4/OnlyYesterday.mp4',
@@ -75,7 +77,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener('click', (e)=>{
     e.preventDefault();
-    (currentIndex == 16) ? currentIndex++ : '';
+    (currentIndex == 18) ? currentIndex++ : '';
     swapMedia();
 });
 

@@ -29,6 +29,30 @@ currentDate = new Date();
 let formattedTime = currentDate.toLocaleTimeString('en-US', { timeStyle: 'short' });
 document.getElementById('currentTime').innerText = formattedTime;
 
+// Efecto letra de colores
+(function () {
+    var angle = 0;
+    var textoArcoiris = document.querySelector('p');
+    var text = textoArcoiris.textContent.split('');
+    var len = text.length;
+    var phaseJump = 360 / len;
+    var spans;
+  
+    textoArcoiris.innerHTML = text.map(function (char) {
+      return '<span>' + char + '</span>';
+    }).join('');
+  
+    spans = textoArcoiris.children;
+  
+    (function wheee () {
+      for (var i = 0; i < len; i++) {
+        spans[i].style.color = 'hsl(' + (angle + Math.floor(i * phaseJump)) + ', 55%, 70%)';
+      }
+      angle++;
+      requestAnimationFrame(wheee);
+    })();
+})();  
+
 // Efecto petalos
 class Petal {
     constructor(config) {
