@@ -13,6 +13,8 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
+    'mp4/Purikura.mp4',
+    'mp4/MarioWonder.mp4',
     'mp4/Anya2.mp4',
     'mp4/Appa.mp4',
     'mp4/Tamers.mp4',
@@ -82,7 +84,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener('click', (e)=>{
     e.preventDefault();
-    (currentIndex == 23) ? currentIndex++ : '';
+    (currentIndex == 25) ? currentIndex++ : '';
     swapMedia();
 });
 
