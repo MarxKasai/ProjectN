@@ -1,14 +1,41 @@
 .jumpyMonth {
   animation: jump 1000ms cubic-bezier(0.165, 0.44, 0.64, 1) infinite normal,
-    shine 3s infinite linear;
+    shine 2.5s infinite linear;
   display: inline-block;
   position: relative;
   transform-origin: 50% 100%;
   z-index: 1;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   font-family: "Arial";
-  color: #cecece;
+  background: repeating-linear-gradient(
+    135deg,
+    rgb(255, 221, 155) 0,
+    rgb(254, 215, 146) 20px,
+    rgb(255, 225, 172) 40px,
+    rgb(255, 255, 255) 70px,
+    rgb(250, 198, 107) 125px,
+    rgb(246, 194, 107) 160px,
+    rgb(231, 177, 85) 175px,
+    rgb(244, 193, 107) 185px,
+    rgb(241, 191, 107) 220px,
+    rgb(243, 190, 102) 235px,
+    rgb(233, 177, 83) 250px,
+    rgb(245, 190, 97) 280px,
+    rgb(249, 188, 86) 305px,
+    rgb(255, 251, 245) 385px,
+    rgb(252, 195, 98) 415px,
+    rgb(252, 195, 121) 450px,
+    rgb(255, 221, 155) 500px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  backface-visibility: none;
+  color: rgb(255, 221, 155);
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 3px 1px #000);
 }
 
 @keyframes jump {
@@ -32,15 +59,27 @@
 
 @keyframes shine {
   0% {
-    text-shadow: 0 0 2px rgba(224, 224, 224, 0.8),
-      0 0 4px rgba(224, 224, 224, 0.8), 0 0 6px rgba(224, 224, 224, 0.8),
-      0 0 8px rgba(224, 224, 224, 0.8), 0 0 10px rgba(224, 224, 224, 0.8),
-      0 0 12px rgba(224, 224, 224, 0.8), 0 0 14px rgba(224, 224, 224, 0.8);
+    text-shadow: 0 0 4px rgba(255, 223, 0, 0.8),
+      /* Strong gold */ 0 0 6px rgba(255, 223, 0, 0.8),
+      0 0 8px rgba(255, 223, 0, 0.8), 0 0 12px rgba(255, 215, 0, 0.7),
+      /* Slightly lighter gold */ 0 0 16px rgba(255, 215, 0, 0.6),
+      0 0 18px rgba(255, 215, 0, 0.6), 0 0 22px rgba(255, 215, 0, 0.5),
+      0 0 26px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(255, 230, 0, 0.9),
+      /* Muted gold */ 0 0 10px rgba(255, 230, 0, 0.9),
+      0 0 12px rgba(255, 230, 0, 0.8), 0 0 14px rgba(255, 220, 0, 0.7),
+      /* Slightly lighter gold */ 0 0 18px rgba(255, 220, 0, 0.6),
+      0 0 20px rgba(255, 220, 0, 0.6), 0 0 24px rgba(255, 220, 0, 0.5),
+      0 0 28px rgba(255, 220, 0, 0.5), 0 0 32px rgba(255, 220, 0, 0.4);
   }
   100% {
-    text-shadow: 0 0 2px rgba(224, 224, 224, 0.5),
-      0 0 4px rgba(224, 224, 224, 0.5), 0 0 6px rgba(224, 224, 224, 0.5),
-      0 0 8px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5),
-      0 0 12px rgba(255, 255, 255, 0.5), 0 0 14px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 4px rgba(255, 210, 0, 0.6),
+      /* Faint gold */ 0 0 6px rgba(255, 210, 0, 0.6),
+      0 0 8px rgba(255, 210, 0, 0.6), 0 0 12px rgba(255, 200, 0, 0.5),
+      /* Lighter gold */ 0 0 16px rgba(255, 200, 0, 0.4),
+      0 0 18px rgba(255, 200, 0, 0.4), 0 0 22px rgba(255, 200, 0, 0.3),
+      0 0 26px rgba(255, 200, 0, 0.3), 0 0 30px rgba(255, 200, 0, 0.2);
   }
 }

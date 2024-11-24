@@ -1,62 +1,73 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../img/StarryNight.gif) no-repeat center center fixed #aec6cf;
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  background: url(../img/StarryNight.gif) no-repeat center center fixed #aec6cf;
+  background-size: cover;
 }
 
 .gift {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: descender 15s ease-in-out forwards;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: descender 15s ease-in-out forwards;
 }
 
 .gift img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 @keyframes descender {
-    to {
-        top: 50%;
-    }
+  to {
+    top: 50%;
+  }
+}
+
+.planet {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 80px;
+}
+
+.planet img {
+  width: 15%;
+  height: auto;
 }
 
 .ufo {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 80px;
 }
 
 .ufo img {
-    width: 15%;
-    height: auto;
+  width: 15%;
+  height: auto;
 }
 
 #audioButton {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-    .contenido img {
-        width: 100%;
-    }
+  .contenido img {
+    width: 100%;
+  }
 
-    .ufo img {
-        width: 35%;
-    }
+  .ufo img {
+    width: 35%;
+  }
 }

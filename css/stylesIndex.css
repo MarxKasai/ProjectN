@@ -48,9 +48,11 @@ main {
 
 .text-container {
   position: relative;
+  font-weight: bold;
   text-align: center;
   font-family: "Lexend Deca", serif;
-  color: #00000020;
+  color: lightpink;
+  opacity: 60%;
 }
 
 .cats-container {
@@ -140,6 +142,18 @@ main {
   to {
     transform: scale(1.1);
   }
+}
+
+#backButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 #audioButton {

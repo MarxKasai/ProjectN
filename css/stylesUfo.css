@@ -23,26 +23,45 @@ body {
     url(../img/StarryNight.gif) repeat no-repeat top center fixed #0e0e0e;
 }
 
+/* Footer styling */
 footer {
-  color: white;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 40px;
+  text-align: center;
   box-sizing: border-box;
-  font-size: 0.4em;
 }
 
-.footer .signature {
-  margin-left: 10px;
+/* Button styling */
+.travel-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    #ff007f,
+    #007fff
+  ); /* Pink to blue gradient */
+  border-radius: 20px; /* Rounded edges */
+  border: 4px solid darkgrey;
+  font-family: sans-serif; /* You can change to any font you want */
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.footer .version {
-  margin-right: 10px;
+/* Hover effect */
+.travel-btn:hover {
+  background: linear-gradient(
+    45deg,
+    #ff69b4,
+    #00bfff
+  ); /* Lighter gradient on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
 }
 
 .container {

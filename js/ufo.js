@@ -12,6 +12,7 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
+  "mp4/Onmyoji.mp4",
   "mp4/Liko.mp4",
   "mp4/MC.mp4",
   "mp4/Purikura.mp4",
@@ -85,7 +86,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener("click", (e) => {
   e.preventDefault();
-  currentIndex == 27 ? currentIndex++ : "";
+  currentIndex == 28 ? currentIndex++ : "";
   swapMedia();
 });
 
