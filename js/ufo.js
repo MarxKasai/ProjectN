@@ -12,6 +12,9 @@ function toggleAudio() {
 
 // Funcionamiento televisor
 const mediaUrls = [
+  "mp4/Kirakirala.mp4",
+  "mp4/Gudetama.mp4",
+  "mp4/Cunky.mp4",
   "mp4/Onmyoji.mp4",
   "mp4/Liko.mp4",
   "mp4/MC.mp4",
@@ -86,7 +89,7 @@ function swapMedia() {
 }
 document.querySelector("#media-container").addEventListener("click", (e) => {
   e.preventDefault();
-  currentIndex == 28 ? currentIndex++ : "";
+  currentIndex == 31 ? currentIndex++ : "";
   swapMedia();
 });
 
